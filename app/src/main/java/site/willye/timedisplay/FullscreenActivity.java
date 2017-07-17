@@ -63,6 +63,14 @@ public class FullscreenActivity extends AppCompatActivity {
         loopHandler.removeCallbacks(loopRunnable);
     }
 
+    public static JSONObject getRoutes() throws IOException, JSONException  {
+        return getJSONObjectFromURL("https://transloc-api-1-2.p.mashape.com/routes.json?agencies=176");
+    }
+
+    public static JSONObject getStops() throws IOException, JSONException  {
+        return getJSONObjectFromURL("https://transloc-api-1-2.p.mashape.com/stops.json?agencies=176");
+    }
+
     public static JSONObject getJSONObjectFromURL(String urlString) throws IOException, JSONException {
         HttpURLConnection urlConnection = null;
         URL url = new URL(urlString);
