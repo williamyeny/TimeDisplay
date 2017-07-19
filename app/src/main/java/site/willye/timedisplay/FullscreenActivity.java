@@ -29,11 +29,16 @@ public class FullscreenActivity extends AppCompatActivity {
     Runnable loopRunnable = new Runnable() {
         @Override
         public void run() {
-            dummyText.setText(String.valueOf(count));
-            count++;
+            updateData();
             loopHandler.postDelayed(this, 1000);
         }
     };
+
+    private void updateData() {
+        dummyText.setText(String.valueOf(count));
+        count++;
+    }
+
     int delay = 1000; //milliseconds
     TextView dummyText;
 
