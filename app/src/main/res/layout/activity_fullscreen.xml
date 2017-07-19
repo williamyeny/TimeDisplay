@@ -60,21 +60,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/estimatedTimeLeftLayout"
-            android:layout_centerHorizontal="true">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-40dp">
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="5:48"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/colorTextSecondary"
                 android:textSize="60sp" />
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="PM"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/colorTextSecondary"
                 android:textStyle="bold"
                 android:textSize="40sp"
                 android:layout_marginLeft="20dp"/>
