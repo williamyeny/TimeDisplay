@@ -1,6 +1,7 @@
 package site.willye.timedisplay;
 
 import android.annotation.SuppressLint;
+import android.graphics.PixelFormat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.os.Handler;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.Window;
 import android.widget.TextView;
 
 import org.json.JSONException;
@@ -35,7 +37,7 @@ public class FullscreenActivity extends AppCompatActivity {
     };
 
     private void updateData() {
-        dummyText.setText(String.valueOf(count));
+//        dummyText.setText(String.valueOf(count));
         count++;
     }
 
@@ -47,8 +49,15 @@ public class FullscreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_fullscreen);
-        dummyText = (TextView)findViewById(R.id.fullscreen_content);
+//        dummyText = (TextView)findViewById(R.id.fullscreen_content);
 
+    }
+    @Override
+    public void onAttachedToWindow() {
+        super.onAttachedToWindow();
+        Window window = getWindow();
+        // Eliminates color banding
+        window.setFormat(PixelFormat.RGBA_8888);
     }
     @Override
     public void onResume() {
