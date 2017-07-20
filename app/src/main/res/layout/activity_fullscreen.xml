@@ -2,18 +2,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground">
+    android:background="@drawable/gradient_background">
 
 
     <TextView
         android:id="@+id/busNameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="100dp"
         android:text="ABC: Bus Name"
         android:textColor="@color/colorTextPrimary"
-        android:layout_marginTop="100dp"
-        android:textSize="45sp"
-        android:layout_marginLeft="70dp" />
+        android:textSize="45sp" />
 
     <TextView
         android:id="@+id/busStopText"
@@ -22,9 +22,9 @@
         android:layout_below="@+id/busNameText"
         android:layout_marginLeft="70dp"
         android:layout_marginTop="10dp"
+        android:text="Bus stop"
         android:textColor="@color/colorTextSecondary"
-        android:textSize="35sp"
-        android:text="Bus stop" />
+        android:textSize="35sp" />
 
     <RelativeLayout
         android:id="@+id/estimatedArrivalLayout"
@@ -34,28 +34,30 @@
         android:layout_centerVertical="true">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/timeLeftLayout"
-            >
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
             <TextView
                 android:id="@+id/timeLeftText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="42"
                 android:textColor="@color/colorTextPrimary"
-                android:textStyle="bold"
-                android:textSize="200sp" />
+                android:textSize="200sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/minText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:text="MIN"
                 android:textColor="@color/colorTextPrimary"
-                android:textStyle="bold"
                 android:textSize="35sp"
-                android:layout_marginLeft="20dp"/>
+                android:textStyle="bold" />
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/arrivalTimeLayout"
             android:layout_width="wrap_content"
@@ -70,17 +72,18 @@
                 android:layout_height="wrap_content"
                 android:text="5:48"
                 android:textColor="@color/colorTextSecondary"
-                android:textStyle="bold"
-                android:textSize="60sp" />
+                android:textSize="60sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/pmText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:text="PM"
                 android:textColor="@color/colorTextSecondary"
-                android:textStyle="bold"
                 android:textSize="35sp"
-                android:layout_marginLeft="20dp"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
 
@@ -96,6 +99,7 @@
         android:layout_marginBottom="0sp"
         android:background="@color/black_overlay"
         android:text="next stop"
+        android:textAllCaps="true"
         android:textColor="@color/colorTextPrimary"
         android:textSize="25dp" />
 

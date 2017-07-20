@@ -115,4 +115,6 @@ public class FullscreenActivity extends AppCompatActivity {
         return new JSONObject(jsonString);
     }
 
+
+
 }
