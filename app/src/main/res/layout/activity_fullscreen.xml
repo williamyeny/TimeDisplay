@@ -6,40 +6,40 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/busNameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ABC: Bus Name"
-        android:layout_centerHorizontal="true"
         android:textColor="@color/colorTextPrimary"
-        android:layout_marginTop="130dp"
-        android:textSize="45sp" />
+        android:layout_marginTop="100dp"
+        android:textSize="45sp"
+        android:layout_marginLeft="70dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/busStopText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/busNameText"
+        android:layout_marginLeft="70dp"
         android:layout_marginTop="10dp"
         android:textColor="@color/colorTextSecondary"
-        android:textSize="30sp"
+        android:textSize="35sp"
         android:text="Bus stop" />
 
     <RelativeLayout
+        android:id="@+id/estimatedArrivalLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:id="@+id/relativeLayout">
+        android:layout_centerVertical="true">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/estimatedTimeLeftLayout"
+            android:id="@+id/timeLeftLayout"
             >
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/timeLeftText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="42"
@@ -47,41 +47,56 @@
                 android:textStyle="bold"
                 android:textSize="200sp" />
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/minText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="MIN"
                 android:textColor="@color/colorTextPrimary"
                 android:textStyle="bold"
-                android:textSize="40sp"
+                android:textSize="35sp"
                 android:layout_marginLeft="20dp"/>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/arrivalTimeLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/estimatedTimeLeftLayout"
+            android:layout_below="@id/timeLeftLayout"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="-40dp">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/arrivalTimeText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="5:48"
                 android:textColor="@color/colorTextSecondary"
+                android:textStyle="bold"
                 android:textSize="60sp" />
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/pmText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="PM"
                 android:textColor="@color/colorTextSecondary"
                 android:textStyle="bold"
-                android:textSize="40sp"
+                android:textSize="35sp"
                 android:layout_marginLeft="20dp"/>
         </LinearLayout>
 
 
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0sp"
+        android:background="@color/black_overlay"
+        android:text="next stop"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="25dp" />
 
 </RelativeLayout>
