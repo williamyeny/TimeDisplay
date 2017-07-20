@@ -26,6 +26,18 @@
         android:textColor="@color/colorTextSecondary"
         android:textSize="35sp" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ETA"
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="30sp"
+        android:layout_above="@+id/estimatedArrivalLayout"
+        android:layout_alignLeft="@+id/estimatedArrivalLayout"
+        android:layout_alignStart="@+id/estimatedArrivalLayout"
+        android:layout_marginBottom="-10sp"/>
+
     <RelativeLayout
         android:id="@+id/estimatedArrivalLayout"
         android:layout_width="wrap_content"
@@ -44,18 +56,16 @@
                 android:layout_height="wrap_content"
                 android:text="42"
                 android:textColor="@color/colorTextPrimary"
-                android:textSize="200sp"
-                android:textStyle="bold" />
+                android:textSize="200sp" />
 
             <TextView
                 android:id="@+id/minText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="MIN"
+                android:text="min"
                 android:textColor="@color/colorTextPrimary"
-                android:textSize="35sp"
-                android:textStyle="bold" />
+                android:textSize="40sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -64,7 +74,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/timeLeftLayout"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="-40dp">
+            android:layout_marginTop="-30dp">
 
             <TextView
                 android:id="@+id/arrivalTimeText"
@@ -72,18 +82,16 @@
                 android:layout_height="wrap_content"
                 android:text="5:48"
                 android:textColor="@color/colorTextSecondary"
-                android:textSize="60sp"
-                android:textStyle="bold" />
+                android:textSize="60sp" />
 
             <TextView
                 android:id="@+id/pmText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="10dp"
                 android:text="PM"
                 android:textColor="@color/colorTextSecondary"
-                android:textSize="35sp"
-                android:textStyle="bold" />
+                android:textSize="35sp" />
         </LinearLayout>
 
 
